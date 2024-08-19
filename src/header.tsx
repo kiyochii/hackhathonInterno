@@ -12,10 +12,16 @@ const Header: React.FC = () => {
     </header>
   );
 };
+
 const headerStyle: React.CSSProperties = {
+  
   display: "flex",
   justifyContent: "center",
-  alignItems: "center",
+  position: "absolute", 
+  left: "20px",         
+  top: "20px",          
+  
+  
 };
 
 const centerStyle: React.CSSProperties = {
