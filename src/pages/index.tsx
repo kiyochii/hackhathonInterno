@@ -7,7 +7,7 @@ import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [showItems, setShowItems] = useState(false); // Estado para controlar a visibilidade da lista
+  const [showItems, setShowItems] = useState(false); 
   const items = ["a", "b", "c", "d", "e", "f", "g", "h"];
 
   const filteredItems = items.filter(item =>
@@ -19,10 +19,9 @@ const Home: NextPage = () => {
       style={{
       display: "flex",
       flexDirection: "column",
-      justifyContent: "flex-start", // Conteúdo começa no topo
-      alignItems: "center", // Centraliza horizontalmente
-      paddingTop: "100px", // Ajusta a posição verticalmente
-      minHeight: "100vh", // Garante que o div ocupe a altura da tela
+      justifyContent: "flex-start", // pra começa no topo
+      alignItems: "center", 
+      paddingTop: "100px", 
       }}
     >
       <Link href="/vendor">
@@ -34,8 +33,8 @@ const Home: NextPage = () => {
         placeholder="Pesquisar..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        onFocus={() => setShowItems(true)} // Mostrar itens ao focar no campo
-        onBlur={() => setTimeout(() => setShowItems(false), 100)} // Ocultar itens ao desfocar o campo (com um pequeno atraso para evitar fechar antes de clicar)
+        onFocus={() => setShowItems(true)} 
+        onBlur={() => setTimeout(() => setShowItems(false), 100)} //tem q ter esse tempo para nn bugar
         style={{ margin: "20px 0", padding: "10px", width: "200px" }}
       />
 
