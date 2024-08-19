@@ -7,8 +7,8 @@ import styles from "../styles/Home.module.css";
 const Home: NextPage = () => {
   return (
     <div>
-      <Link href="/cliente">
-        <button> oi</button>
+      <Link href="/vendor">
+        <button> Sou um vendedor</button>
       </Link>
       <div>henrique</div>
       <div>dan</div>
