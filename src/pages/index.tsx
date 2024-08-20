@@ -19,7 +19,7 @@ const Home: NextPage = () => {
       style={{
       display: "flex",
       flexDirection: "column",
-      justifyContent: "flex-start", // pra começa no topo
+      justifyContent: "flex-start", // npra começa no topo
       alignItems: "center", 
       paddingTop: "100px", 
       }}
